@@ -1,16 +1,16 @@
 LTspice 26.0.1 for Windows
-Circuit: C:\LTspice\ELECTENG 310 Lab\lab for transmitter.net
-Start Time: Sun Mar 15 18:51:41 2026
+Circuit: C:\EE310_Group9_Water-Level-Sensor\LT SPICE MODELS\integrator\lab for transmitter.net
+Start Time: Mon Mar 16 13:47:06 2026
 solver = Normal
 Maximum thread count: 16
 tnom = 27
 temp = 27
 method = trap
 Direct Newton iteration succeeded in finding operating point.
-Total elapsed time: 0.646 seconds.
+Total elapsed time: 0.784 seconds.
 
 Files loaded:
-C:\LTspice\ELECTENG 310 Lab\lab for transmitter.net
-C:\LTspice\ELECTENG 310 Lab\LM324.lib
+C:\EE310_Group9_Water-Level-Sensor\LT SPICE MODELS\integrator\lab for transmitter.net
+C:\EE310_Group9_Water-Level-Sensor\LT SPICE MODELS\integrator\LM324.lib
 C:\Users\realh\AppData\Local\LTspice\lib\sub\UniversalOpAmp2.lib
 
