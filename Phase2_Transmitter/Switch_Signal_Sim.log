@@ -1,0 +1,17 @@
+LTspice 24.1.9 for Windows
+Circuit: C:\Users\elias\Documents\EE310\EE310_Group9_Water-Level-Sensor\Phase2_Transmitter\Switch_Signal_Sim.net
+Start Time: Sat Mar 14 17:27:47 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.180 seconds.
+
+Files loaded:
+C:\Users\elias\Documents\EE310\EE310_Group9_Water-Level-Sensor\Phase2_Transmitter\Switch_Signal_Sim.net
+C:\Users\elias\Documents\EE310\EE310_Group9_Water-Level-Sensor\Phase2_Transmitter\LM324.lib
+C:\Users\elias\Documents\EE310\EE310_Group9_Water-Level-Sensor\Phase2_Transmitter\LM393A.5_1
+C:\Users\elias\Documents\EE310\EE310_Group9_Water-Level-Sensor\Phase2_Transmitter\LM358.mod
+
