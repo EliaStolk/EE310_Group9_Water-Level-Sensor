@@ -1,0 +1,43 @@
+* C:\Users\munta\OneDrive\Desktop\EE310_Group9_Water-Level-Sensor\Phase2_Transmitter\555 timer implementations.asc
+D1 VCC N005 1N914
+Q1 VCC N002 N008 0 2N3904
+Q2 N005 N008 N009 0 2N2222
+R1 N009 0 47
+R2 N002 0 4.7k
+R3 VCC N002 10k
+VCC VCC 0 12
+V2 V+ 0 5
+V3 Offset 0 2
+M1 N004 N006 0 0 IRFZ44N
+D2 N001 N004 1N914
+R13 V+ N001 47
+C4 V+ 0 100n
+R14 N006 Led 100
+R4 5V Vr 33k
+R5 Vr N007 33k
+D5 Vc N007 BAT54
+C2 Vc 0 400p
+D6 Vr Vc BAT54
+XU1 0 Vc Led 5V N003 Vc Vr 5V NE555
+C1 0 N003 100nF
+.model D D
+.lib C:\Users\munta\AppData\Local\LTspice\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\munta\AppData\Local\LTspice\lib\cmp\standard.bjt
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\munta\AppData\Local\LTspice\lib\cmp\standard.mos
+.tran 1000ms
+.include TLC081.mod
+.include LM324.lib
+.include LM358.mod
+.include LM393A.txt
+* .include LM358.txt
+* i think that the square wave generator is mostly fine maybe just tweaks if we want different frequencys
+* change in voltage is changed to be 1.5V to try fit in the characteristics of the TLC082 better(0.18 - 4.3)V
+* Darlton pair
+.include irlz44n.txt
+.lib NE555.sub
+.backanno
+.end
