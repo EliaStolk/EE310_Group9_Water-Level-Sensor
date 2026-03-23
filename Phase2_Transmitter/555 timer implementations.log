@@ -1,6 +1,6 @@
 LTspice 24.0.12 for Windows
 Circuit: * C:\Users\munta\OneDrive\Desktop\EE310_Group9_Water-Level-Sensor\Phase2_Transmitter\555 timer implementations.asc
-Start Time: Mon Mar 23 12:48:55 2026
+Start Time: Mon Mar 23 13:34:15 2026
 solver = Normal
 Maximum thread count: 16
 tnom = 27
@@ -9,5 +9,5 @@ method = modified trap
 WARNING: Less than two connections to node vcc.  This node is used by vcc.
 WARNING: Less than two connections to node offset.  This node is used by v3.
 Direct Newton iteration for .op point succeeded.
-Total elapsed time: 6.478 seconds.
+Total elapsed time: 6.228 seconds.
 
