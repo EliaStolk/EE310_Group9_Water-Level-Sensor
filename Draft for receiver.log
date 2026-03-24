@@ -1,0 +1,21 @@
+LTspice 26.0.1 for Windows
+Circuit: C:\Users\cli942\OneDrive - The University of Auckland\Documents\GitHub\EE310_Group9_Water-Level-Sensor\Draft for receiver.net
+Start Time: Tue Mar 24 15:09:14 2026
+solver = Normal
+Maximum thread count: 24
+tnom = 27
+temp = 27
+method = trap
+WARNING: Node n004 is floating.
+
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+Total elapsed time: 0.406 seconds.
+
+Files loaded:
+C:\Users\cli942\OneDrive - The University of Auckland\Documents\GitHub\EE310_Group9_Water-Level-Sensor\Draft for receiver.net
+C:\Users\cli942\AppData\Local\LTspice\lib\cmp\standard.dio
+C:\Users\cli942\AppData\Local\LTspice\lib\sub\UniversalOpAmp2.lib
+
