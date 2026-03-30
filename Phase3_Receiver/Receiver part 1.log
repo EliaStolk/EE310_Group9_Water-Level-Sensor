@@ -1,21 +1,20 @@
 LTspice 26.0.1 for Windows
-Circuit: C:\TEMP\EE310_Group9_Water-Level-Sensor\Phase3_Receiver\Receiver part 1.net
-Start Time: Fri Mar 27 13:45:40 2026
+Circuit: C:\EE310_Group9_Water-Level-Sensor\Phase3_Receiver\Receiver part 1.net
+Start Time: Mon Mar 30 13:43:46 2026
 solver = Normal
-Maximum thread count: 24
+Maximum thread count: 16
 tnom = 27
 temp = 27
 method = trap
-C:\TEMP\EE310_Group9_Water-Level-Sensor\Phase3_Receiver\Receiver part 1.net(6): WARNING: Ncycles must be a positive number, will be ignored (using default = infinity).
+C:\EE310_Group9_Water-Level-Sensor\Phase3_Receiver\Receiver part 1.net(6): WARNING: Ncycles must be a positive number, will be ignored (using default = infinity).
 
-I1 N002 0 PULSE(0 9u 0.00000000001 0.00000000001 0.00000000001 10u 30u 0)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-C:\TEMP\EE310_Group9_Water-Level-Sensor\Phase3_Receiver\Receiver part 1.net(39): WARNING: Ncycles must be a positive number, will be ignored (using default = infinity).
+I1 N002 0 PULSE(0 9u 0.00000000001 0.00000000001 0.00000000001 6u 30u 0)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\EE310_Group9_Water-Level-Sensor\Phase3_Receiver\Receiver part 1.net(39): WARNING: Ncycles must be a positive number, will be ignored (using default = infinity).
 
-I2 N001 0 PULSE(0 100n 0.00000000001 0.00000000001 0.00000000001 6u 30.33u 0)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+I2 N001 N004 PULSE(0 100n 0.00000000001 0.00000000001 0.00000000001 15u 30.33u 0)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 WARNING: Node 2.5v_test is floating.
-WARNING: Node vin is floating.
 
 Early termination of direct N-R iteration.
 Direct Newton iteration failed to find operating point.
@@ -24,12 +23,14 @@ Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip a
 Starting source stepping with srcstepmethod=0
 Source stepping succeeded in finding the operating point.
 
-Total elapsed time: 33.082 seconds.
+Warning: Simulation tolerance relaxed to achieve convergence from 3.7759200287504299e-03 to 3.7759200287504398e-03 seconds.
+Warning: Simulation tolerance relaxed to achieve convergence from 5.9250000011299132e-02 to 5.9250000011299229e-02 seconds.
+Total elapsed time: 163.542 seconds.
 
 Files loaded:
-C:\TEMP\EE310_Group9_Water-Level-Sensor\Phase3_Receiver\Receiver part 1.net
-C:\Users\esto675\AppData\Local\LTspice\lib\cmp\standard.dio
-C:\TEMP\EE310_Group9_Water-Level-Sensor\Phase3_Receiver\LM324.lib
-C:\Users\esto675\AppData\Local\LTspice\lib\sub\LTC.lib
-C:\TEMP\EE310_Group9_Water-Level-Sensor\Phase3_Receiver\TLC081.mod
+C:\EE310_Group9_Water-Level-Sensor\Phase3_Receiver\Receiver part 1.net
+C:\Users\realh\AppData\Local\LTspice\lib\cmp\standard.dio
+C:\EE310_Group9_Water-Level-Sensor\Phase3_Receiver\LM324.lib
+C:\Users\realh\AppData\Local\LTspice\lib\sub\LTC.lib
+C:\EE310_Group9_Water-Level-Sensor\Phase3_Receiver\TLC081.mod
 
