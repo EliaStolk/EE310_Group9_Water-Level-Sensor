@@ -1,6 +1,6 @@
 LTspice 26.0.1 for Windows
 Circuit: C:\EE310_Group9_Water-Level-Sensor\Phase3_Receiver\Opamp based receiver.net
-Start Time: Mon Apr 13 14:24:02 2026
+Start Time: Mon Apr 13 15:19:06 2026
 solver = Normal
 Maximum thread count: 16
 tnom = 27
@@ -17,7 +17,9 @@ Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip a
 Starting source stepping with srcstepmethod=0
 Source stepping succeeded in finding the operating point.
 
-Total elapsed time: 25.811 seconds.
+
+Simulation stopped by user.
+Total elapsed time: 15.079 seconds.
 
 Files loaded:
 C:\EE310_Group9_Water-Level-Sensor\Phase3_Receiver\Opamp based receiver.net
