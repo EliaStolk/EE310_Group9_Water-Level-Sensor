@@ -3,17 +3,17 @@
 Cpd Vdiode 5V 4p
 Rpd Vdiode 5V 200Meg
 I1 5V Vdiode PULSE(0 9u 0 10n 10n 11u 33u 0)
-R15 N007 V_bias 82k
-R6 N005 V_bias 10k
-X§U2B N007 N005 5V 0 V_IN_RX TLC081 ;§pnba In+)In-)V+)V-)OUT
-C9 N007 Vdet1 10n
-R3 V_IN_RX N005 15k
-X§U5A N013 V_bias 5V 0 V_SQ TLC081 ;§pnba In+)In-)V+)V-)OUT
-R23 N013 V_IN_RX 100
-R27 V_SQ N013 100k
-X§U5B N006 V_bias 5V 0 Vfilter TLC081 ;§pnba In+)In-)V+)V-)OUT
-R24 N006 V_P 220
-R28 Vfilter N006 100k
+R15 N010 V_bias 82k
+R6 N008 V_bias 10k
+X§U2B N010 N008 5V 0 V_IN_RX TLC081 ;§pnba In+)In-)V+)V-)OUT
+C9 N010 Vdet1 10n
+R3 V_IN_RX N008 15k
+X§U5A N016 V_bias 5V 0 V_SQ TLC081 ;§pnba In+)In-)V+)V-)OUT
+R23 N016 V_IN_RX 100
+R27 V_SQ N016 100k
+X§U5B N009 V_bias 5V 0 Vfilter TLC081 ;§pnba In+)In-)V+)V-)OUT
+R24 N009 V_P 220
+R28 Vfilter N009 100k
 D3 V_SQ N003 1N4148
 C18 N003 V_P 5n
 R26 N003 V_P 1500
@@ -21,29 +21,40 @@ R29 V_P 0 2700
 V2 5V 0 5
 C8 5V 0 100n
 R8 Vdiode 0 120k
-X§U2A Vdiode N010 5V 0 Vdet1 TLC081 ;§pnba In+)In-)V+)V-)OUT
-R2 Vdet1 N010 10k
+X§U2A Vdiode N013 5V 0 Vdet1 TLC081 ;§pnba In+)In-)V+)V-)OUT
+R2 Vdet1 N013 10k
 X§U3A N004 N001 5V 0 N002 TLC081 ;§pnba In+)In-)V+)V-)OUT
 R1 N002 N001 10k
 R16 N004 0 10k
 R9 V_bias N002 10k
 R12 N004 5V 10k
-R5 N010 0 10k
-C5 Vdet1 N010 56p
-C6 V_IN_RX N005 33p
+R5 N013 0 10k
+C5 Vdet1 N013 56p
+C6 V_IN_RX N008 33p
 C12 N004 0 1.5n
 C10 V_bias 0 1.5n
-X§U3B N012 N011 5V 0 N009 TLC081 ;§pnba In+)In-)V+)V-)OUT
-R13 N012 5V 10k
-R33 0 N012 2.7k
+X§U3B N015 N014 5V 0 N012 TLC081 ;§pnba In+)In-)V+)V-)OUT
+R13 N015 5V 10k
+R33 0 N015 2.7k
 C25 5V 0 390n
-C14 N009 N011 10n
-R7 N011 N008 10k
-C13 N008 0 10n
-R4 N009 N008 220k
-R14 N008 Vfilter 100k
-R10 Vout N009 10k
+C14 N012 N014 10n
+R7 N014 N011 10k
+C13 N011 0 10n
+R4 N012 N011 220k
+R14 N011 Vfilter 100k
+R10 Vout N012 10k
 C11 Vout 0 80n
+X§U1 0 N006 N007 5V P001 Vrc Vrc 5V NE555 ;§pnba GND)TRIG)OUT)RST)CV)THRS)DIS)Vcc
+R11 N007 Vfilter2 10k
+C1 Vfilter2 Vof 80n
+R17 5V Vrc 13k
+C2 Vrc 0 1.5n
+D1 N006 5V D
+R18 5V N006 10k
+R19 5V N005 56k
+C3 N006 N005 1n
+R20 N005 V_SQ 1k
+C4 0 P001 100n
 .model D D
 .lib C:\Users\realh\AppData\Local\LTspice\lib\cmp\standard.dio
 .lib LM324.lib
@@ -68,5 +79,10 @@ C11 Vout 0 80n
 * Transimpedance amp + photo diode
 * Difference amp
 * low pass filter fc approx 300kHz
+* Gain of 2
+* max Vpp approx 1.08 (9u x 120k)
+* frequency range of 3k to 30k
+* Library below included based on ModelFile attribute of instance X§U1 (C:\Users\realh\AppData\Local\LTspice\lib\sym\Misc\NE555.asy)
+.lib NE555.sub
 .backanno
 .end
