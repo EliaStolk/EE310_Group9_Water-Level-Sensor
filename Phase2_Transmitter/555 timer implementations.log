@@ -1,3 +1,22 @@
-C:\EE310_Group9_Water-Level-Sensor\Phase2_Transmitter\555 timer implementations.net(31): Expected model definition here.
-.model IRLHS6376
-                ^
+LTspice 26.0.1 for Windows
+Circuit: C:\EE310_Group9_Water-Level-Sensor\Phase2_Transmitter\555 timer implementations.net
+Start Time: Mon Apr 13 13:40:11 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.649 seconds.
+
+Files loaded:
+C:\EE310_Group9_Water-Level-Sensor\Phase2_Transmitter\555 timer implementations.net
+C:\Users\realh\AppData\Local\LTspice\lib\cmp\standard.dio
+C:\Users\realh\AppData\Local\LTspice\lib\cmp\standard.mos
+C:\EE310_Group9_Water-Level-Sensor\Phase2_Transmitter\TLC081.mod
+C:\EE310_Group9_Water-Level-Sensor\Phase2_Transmitter\LM324.lib
+C:\EE310_Group9_Water-Level-Sensor\Phase2_Transmitter\LM358.mod
+C:\EE310_Group9_Water-Level-Sensor\Phase2_Transmitter\LM393A.txt
+C:\EE310_Group9_Water-Level-Sensor\Phase2_Transmitter\irlz44n.txt
+C:\Users\realh\AppData\Local\LTspice\lib\sub\NE555.sub
+

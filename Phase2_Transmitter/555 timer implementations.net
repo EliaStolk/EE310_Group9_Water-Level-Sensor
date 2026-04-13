@@ -3,18 +3,18 @@
 VCC VCC 0 12
 V2 5V 0 5
 V3 Offset 0 2
-R4 5V Vr 56k
-R5 Vr N005 56k
-D5 Vc N005 BAT54
-C2 Vc 0 1500p
-D6 Vr Vc BAT54
+R1 5V Vr 10k
+R3 Vr N005 22k
+D3 Vc N005 BAT54
+C8 Vc 0 1500p
+D2 Vr Vc BAT54
 X§U1 0 Vc Led 5V N002 Vc Vr 5V NE555 ;§pnba GND)TRIG)OUT)RST)CV)THRS)DIS)Vcc
 C1 0 N002 100nF
-M2 N003 N004 0 0 IRLHS6376
+M§Q1 N003 N004 0 0 IRFZ44N
 D1 N001 N003 1N914
-R1 5V N001 47
-C3 5V 0 100n
-R2 N004 Led 100
+R2 5V N001 47
+C9 5V 0 100n
+R4 N004 Led 100
 .model D D
 .lib C:\Users\realh\AppData\Local\LTspice\lib\cmp\standard.dio
 .model NMOS NMOS
@@ -26,9 +26,7 @@ R2 N004 Led 100
 .include LM358.mod
 .include LM393A.txt
 * .include LM358.txt
-* i think that the square wave generator is mostly fine maybe just tweaks if we want different frequencys
-* change in voltage is changed to be 1.5V to try fit in the characteristics of the TLC082 better(0.18 - 4.3)V
-.model IRLHS6376
+.include irlz44n.txt
 * Library below included based on ModelFile attribute of instance X§U1 (C:\Users\realh\AppData\Local\LTspice\lib\sym\Misc\NE555.asy)
 .lib NE555.sub
 .backanno
